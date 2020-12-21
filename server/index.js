@@ -3,10 +3,12 @@ const port = 3003;
 const app = express();
 const db = require("../database/index.js");
 const bodyParser = require("body-parser");
-
+const path = require("path")
 // app.get('/', (req, res) => {
 //   res.send(`we're live on ${port}`)
 // });
+
+app.use(express.static(path.join(__dirname, "../", "client/dist")));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

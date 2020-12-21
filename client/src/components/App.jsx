@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from './Header.jsx';
 
 const App = () => (
-
-  <div> hello friend, check out the SQL data on 3003/movies </div>
-
+<div>
+  < Header />
+</div>
 )
 
 export default App;
