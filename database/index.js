@@ -6,11 +6,12 @@ const dbconnect = mysql.createConnection({
   password: '3327',
   database: 'movielistsql'
 });
+
 dbconnect.connect((err) => {
   if (err) {
     throw err;
   } else {
-    console.log(`connected to database`)
+    console.log(`connected to database!`)
   }
 })
 
