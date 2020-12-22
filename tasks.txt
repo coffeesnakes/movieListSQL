@@ -3,7 +3,7 @@ Set up development environment  x
 Structure project to transpile using webpack   x
 Serve application with Node/Express    x
 Create GroceryList database in MySQL   x
-Connect Node server to MySQL DB using npm mysql package
+Connect Node server to MySQL DB using npm mysql package   x
 Build front end
 Develop front end application (add groceries to local state)
 Build working backend
