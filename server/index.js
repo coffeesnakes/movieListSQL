@@ -21,4 +21,17 @@ app.get("/movies", (req, res) => {
   });
 });
 
+app.post('/movies', (req, res) => {
+  const {name, length, rating} = req.body;
+  const q = `INSERT INTO movies (name, length, rating) VALUES (?, ?, ?)`;
+  db.query(q, [name, length, rating], (err, results) => {
+    if (err){
+      console.log(err);
+      res.sendStatus(500);
+    } else {
+      console.log('from db: ', results );
+      res.sendStatus(200)
+    }
+  })
+})
 app.listen(port, console.log(`listening on: ${port}`));
