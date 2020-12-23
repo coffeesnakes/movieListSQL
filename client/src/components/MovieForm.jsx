@@ -17,7 +17,7 @@ class MovieForm extends React.Component {
         <form>
           <label>
             {" "}
-            Name
+            name
             <input name="name" value={name} size="10" />
           </label>
           <label>

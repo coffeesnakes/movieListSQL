@@ -1,10 +1,10 @@
 {
   "name": "movie-browser",
   "version": "1.1.0",
-  "description": "HRSF77/78 Review: Movie Browser",
+  "description": "jakes movielist pogchampion",
   "author": "Hack Reactor <curriculum.team@hackreactor.com>",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "",
+  "private": false,
   "scripts": {
     "react-dev": "webpack -d --watch",
     "start": "nodemon server/index.js",
